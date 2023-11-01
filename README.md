@@ -1,3 +1,9 @@
+Proyecto de Muestra, web Ultra Fibra.
+
+Este proyecto es una Muestra para la gerencia de UltraFibra mostrando las posibilidades que tenemos al desarrollar una web con Angular. La misma esta diseñada y codificada por mi, sin un diseño UX/UI previo ya que no es mi area. 
+Este desarrollo es un prototipo previo a la aprobacion por parte de la gerencia de ultra fibra para actualizar la pagina web de la empresa. Una vez aprobado se contrataria el diseño UX/UI antes de programar.  
+
+
 # FrontUltraFibra
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
@@ -25,3 +31,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
