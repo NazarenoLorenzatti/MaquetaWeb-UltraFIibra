@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import "src/assets/themes/theme.css";
+@import "primeng/resources/primeng.css";
+@import 'primeicons/primeicons.css';
+
+@font-face {
+    font-family: 'fuentePersonalizada';
+    src: url('./assets/fonts/4226-font.ttf');
+}
+
+.p-dropdown {
+    display: flex !important;
+}
+
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+ul {
+    font-family: 'fuentePersonalizada';
+}
+
+.p-button.p-button-success{
+    background-color: #071426 !important;
+}
+
+.p-inputnumber{
+    display: flex;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(23, 28, 53);
+}

@@ -25,7 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/themes/theme.css",
+              "node_modules/primeicons/primeicons.css"
             ],
             "scripts": []
           },
@@ -94,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4592a94e-4776-4f08-abbf-00445c1d1a21"
   }
 }

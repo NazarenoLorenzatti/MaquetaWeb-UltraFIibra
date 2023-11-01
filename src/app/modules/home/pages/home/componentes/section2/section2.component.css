@@ -1,0 +1,224 @@
+/* SECCION DE LOCALIDADES Y PRECIOS */
+p, h1 {
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #32fd73;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.second-section-home {
+    background-image: url("/assets/images/degradado.png");
+    background-position: 40% 35%;
+    /* Posición personalizada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    padding: 20px;
+}
+
+.section-title {
+    color: #ffffff;
+    text-shadow: 1px 3px 8px #000000;
+    letter-spacing: 3px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 5%;
+}
+
+.btns-localidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.direccion-sucursal {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 20%;
+}
+
+.card-direccion {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info-sucursal {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.direccion,
+.horario {
+    height: 20px;
+}
+
+.promos {
+    display: flex;
+    height: 8%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.divisor {
+    background-color: #d7f0ff;
+    width: 90%;
+    height: 3px;
+    margin-bottom: 30px;
+}
+
+.container-promos-sucursal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+}
+
+.precios-localidad {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.contenedor-tarjeta {
+    display: flex;
+    width: 25%;
+    height: 85%;
+    justify-content: center;
+    perspective: 1000px;
+    transition: transform 0.6s ease-in-out, background-color 0.3s, color 0.3s;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    border-radius: 6px;
+    border: 3px solid #0d2445cd;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background: rgb(34, 34, 34);
+    background: linear-gradient(325deg, rgba(34, 34, 34, 1) 0%, rgba(13, 34, 63, 1) 100%);
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: rotateY(180deg);
+}
+
+.back-tarjeta {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: #222222;*/
+    border-radius: 6px;
+    /*border: 2px solid rgba(71, 71, 71, 1);*/
+    background: rgb(71, 71, 71);
+    background: linear-gradient(50deg, rgba(71, 71, 71, 1) 0%, rgba(13, 34, 63, 1) 100%);
+    /* Cambia el color de fondo según tus necesidades */
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.nombre-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    width: 110%;
+    height: 20%;
+    background-color: #222222;
+    color: #f7f7f7;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid #292525;
+}
+
+.nombre-plan.back {
+    background-color: #0d223f;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid #0d223f;
+
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    width: 100%;
+    height: 50%;
+    transition: transform 1.2s, background-color 0.3s, color 0.3s;
+}
+
+.card-footer {
+    text-shadow: 2px 2px 6px #000000;
+    border-top: 2px solid #31FB73;
+    color: #f7f7f7;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 1s, background-color 0.3s, color 0.3s;
+
+}
+
+
+@keyframes fadeIn {
+    0% {
+        scale: 0.2;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tarjeta {
+    animation: fadeIn 1.5s ease;
+}

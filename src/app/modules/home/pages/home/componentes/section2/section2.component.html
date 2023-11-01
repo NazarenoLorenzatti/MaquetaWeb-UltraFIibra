@@ -1,0 +1,101 @@
+<section class="second-section-home">
+    <div class="section-title">
+        <div style="display: flex;">
+            <h1 style="margin-right: 5px;">Tenemos un </h1>
+            <h1 style="color: #32fd73;"> PLAN </h1>
+            <h1 style="margin-left: 5px;"> para Vos!</h1>
+        </div>
+    </div>
+    <div class="btns-localidades">
+        <p-button label="MONJE" [raised]="true" severity="primary" (click)="seleccionarLocalidad(0)"></p-button>
+        <p-button label="MACIEL" [raised]="true" severity="success" (click)="seleccionarLocalidad(1)"></p-button>
+        <p-button label="GABOTO" [raised]="true" severity="primary" (click)="seleccionarLocalidad(2)"></p-button>
+        <p-button label="OLIVEROS" [raised]="true" severity="success" (click)="seleccionarLocalidad(3)"></p-button>
+        <p-button label="ANDINO" [raised]="true" severity="primary" (click)="seleccionarLocalidad(4)"></p-button>
+        <p-button label="TIMBUES" [raised]="true" severity="success" (click)="seleccionarLocalidad(5)"></p-button>
+        <p-button label="PUERTO SAN MARTIN" [raised]="true" severity="primary" (click)="seleccionarLocalidad(6)"></p-button>
+        <p-button label="F.L. BELTRAN" [raised]="true" severity="success" (click)="seleccionarLocalidad(7)"></p-button>
+        <p-button label="C. BERMUDEZ" [raised]="true" severity="primary" (click)="seleccionarLocalidad(8)"></p-button>
+        <p-button label="G. BAIGORRIA" [raised]="true" severity="success" (click)="seleccionarLocalidad(9)"></p-button>
+    </div>
+    <div class="direccion-sucursal">
+        <div class="card-direccion">
+            <p-fieldset>
+                <ng-template pTemplate="header">
+                    <div class="flex align-items-center text-primary">
+                        <span class="pi pi-map-marker mr-2 primary" style="font-size: 2rem; color: #32fd73"></span>
+                    </div>
+                </ng-template>
+                <div class="info-sucursal">
+                    <div class="direccion">
+                        <p>{{localidades[indexLocalidad].direccion}}</p>
+                    </div>
+                    <div class="horario">
+                        <p>{{localidades[indexLocalidad].horario}}</p>
+                    </div>                  
+                </div>
+            </p-fieldset>
+        </div>
+    </div>
+    <div class="promos">
+        <h1 style="text-shadow: 1px 3px 8px #000000;">PROMOS DEL </h1>
+        <h1 style="color: #32fd73; margin-left: 5px; text-shadow: 1px 3px 8px #000000;"> MES </h1>
+    </div>
+    <div class="container-promos-sucursal">
+        <div class="precios-localidad">
+            <div *ngFor="let t of localidades[indexLocalidad].tarjetas" class="contenedor-tarjeta"
+                [ngClass]="{'tarjeta': isAnimating}">
+                <div class="tarjeta">
+                    <div class="nombre-plan">
+                        <div>
+                            <h2>{{t.nombrePlan}}</h2>
+                        </div>
+                        <div>
+                            <h2 style="color: #32fd73; margin-left: 8px;">PLUS</h2>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>{{t.detallesPlan}}</li>
+                            <li>Cable Digital HD</li>
+                            <li>NetVideo</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="valor">
+                            <h5>${{t.precioPlan}}</h5>
+                        </div>
+                        <div class="btn-mas-info">
+                            <p-button label="Mas Info" [text]="true" severity="warning" size="small"></p-button>
+                        </div>
+                    </div>
+                    <div class="back-tarjeta">
+                        <div class="nombre-plan back">
+                            <div>
+                                <h1 style="color: #32fd73; margin-right: 8px;">{{t.nombrePlan}}</h1>
+                            </div>
+                            <div>
+                                <h1>PLUS</h1>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li>{{t.detallesPlan}}</li>
+                                <li>Cable Digital HD</li>
+                                <li>NetVideo</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <div class="valor">
+                                <h4>${{t.precioPlan}}</h4>
+                            </div>
+                            <div class="btn-mas-info">
+                                <p-button label="Mas Info" [text]="true" severity="warning" size="small"></p-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

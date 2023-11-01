@@ -1,0 +1,67 @@
+<section class="third-section-home">
+    <div class="formulario-container">
+        <form #formulario class="formulario-contacto">
+            <div style="display: flex;">
+                <h1 style="color: #32fd73; margin-right: 5px;">CONTACTATE </h1>
+                <h1 style="margin-left: 5px; margin-bottom: 15px;">CON NOSOTROS </h1>
+            </div>
+            <div class="row-1">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" (ngModel)="nombre" pInputText />
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input id="correo" (ngModel)="correo" pInputText />
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="campo">
+                    <label for="localidad">Localidad</label>
+                    <input id="localidad" (ngModel)="localidad" pInputText />
+                </div>
+                <div class="campo">
+                    <label for="direccion">Dirección</label>
+                    <input id="direccion" (ngModel)="direccion" pInputText />
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="campo telefono">
+                    <label class="font-bold block mb-2" for="telefono">Telefono</label>
+                    <p-inputNumber (ngModel)="value3" inputId="telefono" placeholder="Telefono sin 0 y sin 15" [useGrouping]="false"> </p-inputNumber>
+                </div>              
+                
+                <div class="campo dropdown">
+                    <label for="consulta">Consulta</label>
+                    <p-dropdown id="consulta" (ngModel)="localidad" [options]="consulta" class="full-width-dropdown"></p-dropdown>
+                </div>
+            </div>
+            <div class="row-4">
+                <div class="campo-texto">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" (ngModel)="comentario" pInputTextarea rows="4"></textarea>
+                    <small id="username-help">Ingrese aqui sus consulta </small>
+                </div>
+            </div>
+            <div class="row-5">
+                <p-button label="Enviar" [raised]="true" severity="warning"></p-button>
+            </div>
+        </form>
+    </div>
+    <div #overlay class="contact-phone-container">
+        <div class="overlay">
+            <div class="phone-container">
+                <div class="phone">
+                    <div style="height: 30%;">
+                        <h1>Contact Center</h1>
+                    </div>
+                    <div style="display: flex;">
+                        <h3 style="margin-right: 5px;">0810 -</h3>
+                        <h3 style="color: #32fd73;"> 112 </h3>
+                        <h3 style="margin-left: 5px;">- 7700</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

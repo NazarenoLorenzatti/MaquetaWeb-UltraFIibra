@@ -1,0 +1,220 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+
+h2, p{
+    margin:0px
+}
+
+.img-logo-navbar {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7288165266106443) 17%, rgba(255,255,255,0.8128501400560224) 40%, rgba(255,255,255,1) 66%);
+    width: 100%;
+    height: 25%;
+}
+
+.logo-slide-img{
+    height: 70px;
+    width: 200px;
+}
+
+.container {
+    width: 100%;
+}
+
+.navbar {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #071426;
+    /* Fondo del Navbar */
+    border-bottom: 5px solid transparent;
+    /* Definimos un borde inferior transparente */
+    border-image: linear-gradient(to right, #4158F0, #31FB73);
+    border-image-slice: 1;
+}
+
+.navbar img {
+    max-width: 200px;
+    /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 40px;
+    /* Espacio entre el logo y los elementos del menú */
+}
+
+/* IMAGENES DE HEADER */
+
+.first-section-home {
+    padding-top: 82px;
+    background-color: #edf9ff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+    border-bottom: 13px solid #071426;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    overflow: hidden;
+    width: 25%;
+    height: 100%;
+}
+
+.slides>a>img {
+    /* Estilos para la imagen dentro del enlace <a> */
+    width: 200px;
+    /* Establece el ancho deseado en píxeles */
+    height: 80px;
+    /* Establece la altura deseada en píxeles */
+    /* Agrega otros estilos según tus necesidades */
+}
+
+
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4 {
+    filter: brightness(0.4);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen al contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center center;
+    /* Centra la imagen tanto horizontal como verticalmente */
+}
+
+.slide-1 {
+    background-image: url("/assets/images/hogar.jpg");
+    transition: width 0.3s ease, filter 0.3s ease;
+}
+
+.slide-1:hover {
+    width: 60%;
+    filter: brightness(1);
+}
+
+.slide-2 {
+    background-image: url("/assets/images/corpo.jpg");
+    transition: width 0.3s ease, filter 0.3s ease;
+}
+
+.slide-2:hover {
+    width: 60%;
+    filter: brightness(1);
+}
+
+.slide-3 {
+    background-image: url("/assets/images/escuelas.jpg");
+    transition: width 0.3s ease, filter 0.3s ease;
+}
+
+.slide-3:hover {
+    width: 60%;
+    filter: brightness(1);
+}
+
+.slide-4 {
+    background-image: url("/assets/images/central-de-monitoreo.jpg");
+    transition: width 0.3s ease, filter 0.3s ease;
+}
+
+.slide-4:hover {
+    width: 60%;
+    filter: brightness(1);
+}
+
+/* -----------------------------------------------------------------------------------------------*/
+
+/* SECCION 5 - FOOTER */
+.section-footer {
+    position: relative;
+  }
+  
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .abstracto {
+    position: absolute;
+    width: 60%; /* Ajusta el ancho según tus necesidades */
+    height: 120px; /* Ajusta la altura según tus necesidades */
+    background-color: #31fb745e; /* Establece el color deseado para los divs abstractos */
+  }
+  
+  .uno {
+    border-top-right-radius: 30px;
+    top: 0;
+    left: 0px;
+  }
+  
+  .dos {
+    border-top-left-radius: 30px;
+    top: 50px;
+    right: 0px;
+  }
+
+  .copy{
+    position: absolute;
+    background-color: #071426;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    top: 100px;
+  }
+
+  .empresa, .redes, .logo-footer{
+    width: 33.3333%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .container-info{
+    display: flex;
+    height: 100%;
+    width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+
+ .container-redes{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+ }
+
+ .imagen-footer{
+    width: 200px;
+    height: 65px;
+ }
+
+  .footer-foot{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    background-color: #222222;
+  }

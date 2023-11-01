@@ -1,0 +1,9 @@
+<p-carousel [value]="clientes" [numVisible]="4" [numScroll]="4" [circular]="true" [responsiveOptions]="responsiveOptions" [autoplayInterval]="5000">
+    <ng-template let-cliente pTemplate="item">
+        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+            <div class="mb-3">
+                <img src="./assets/images/clientes/{{cliente.logoCliente }}" [alt]="cliente.nombreCliente" class="w-6 shadow-2" />
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
