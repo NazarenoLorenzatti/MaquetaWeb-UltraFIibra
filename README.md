@@ -3,6 +3,12 @@ Proyecto de Muestra, web Ultra Fibra.
 Este proyecto es una Muestra para la gerencia de UltraFibra mostrando las posibilidades que tenemos al desarrollar una web con Angular. La misma esta diseñada y codificada por mi, sin un diseño UX/UI previo ya que no es mi area. 
 Este desarrollo es un prototipo previo a la aprobacion por parte de la gerencia de ultra fibra para actualizar la pagina web de la empresa. Una vez aprobado se contrataria el diseño UX/UI antes de programar.  
 
+![image](https://github.com/NazarenoLorenzatti/MaquetaWeb-UltraFIibra/assets/104651834/777e9ff4-a278-4f27-a79f-34bea8f9b2b7)
+
+
+https://github.com/NazarenoLorenzatti/MaquetaWeb-UltraFIibra/assets/104651834/f3e6a2b7-1aaf-42a5-be87-ed9cf15538e1
+
+
 
 # FrontUltraFibra
 
