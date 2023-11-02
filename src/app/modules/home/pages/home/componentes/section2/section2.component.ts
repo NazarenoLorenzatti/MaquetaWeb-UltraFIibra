@@ -25,7 +25,7 @@ export class Section2Component implements OnInit{
     setTimeout(() => {
       this.indexLocalidad = index;
       this.isAnimating = false;
-    }, 100); // Ajusta el tiempo de espera según tus necesidades
+    }, 100); 
   }
 
   localidades: any[] = [

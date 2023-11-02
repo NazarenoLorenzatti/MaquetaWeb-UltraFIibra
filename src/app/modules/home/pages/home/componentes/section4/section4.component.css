@@ -12,9 +12,6 @@
     background-color: #071426;
     border-top: 30px solid rgb(23, 28, 53);
     border-bottom: 30px solid rgb(23, 28, 53);
-    /* Definimos un borde inferior transparente 
-    border-image: linear-gradient(to right, #4158F0, #31FB73);
-    border-image-slice: 1;*/
 }
 
 .clientes-titulo {

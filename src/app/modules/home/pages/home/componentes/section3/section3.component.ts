@@ -22,7 +22,7 @@ export class Section3Component implements OnInit, AfterViewInit {
     const opciones = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.2, // Cambia esto según tu preferencia
+      threshold: 0.2, 
     };
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
